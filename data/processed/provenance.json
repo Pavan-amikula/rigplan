@@ -1,0 +1,12 @@
+{
+  "url": "https://archive.ics.uci.edu/static/public/447/condition+monitoring+of+hydraulic+systems.zip",
+  "doi": "10.24432/C5CW21",
+  "license": "CC BY 4.0",
+  "authors": "Helwig, Pignanelli and Schuetze (2015)",
+  "archive_sha256": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+  "rows": 2205,
+  "stable_rows": 1449,
+  "features": 34,
+  "cycle_seconds": 60,
+  "transform": "Per-cycle mean and population standard deviation; all 17 channels. No imputation."
+}

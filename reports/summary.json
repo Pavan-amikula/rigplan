@@ -1,0 +1,60 @@
+{
+  "seed": 42,
+  "dataset_rows": 2205,
+  "stable_rows": 1449,
+  "excluded_unstable": 756,
+  "historical_training_cycles": 1089,
+  "holdout_cycles": 360,
+  "training_settings": 108,
+  "holdout_settings": 36,
+  "eligible_settings": 108,
+  "selected_settings": 60,
+  "replicates": 3,
+  "selected_cycles": 180,
+  "retrospective_cycle_reduction_pct": 83.47107438016529,
+  "covered_requirements": 87,
+  "total_requirements": 87,
+  "historical_cycle_hours_omitted": 15.15,
+  "historical_motor_kwh_omitted": 38.01550633555556,
+  "full_normalised_MAE": 0.29453495039155875,
+  "optimised_normalised_MAE": 0.39984039099253976,
+  "random_normalised_MAE_mean": 0.4099173357092159,
+  "random_normalised_MAE_std": 0.037353821943437886,
+  "random_runs": 20,
+  "random_coverage_mean": 0.999425287356322,
+  "noninferiority_margin": 0.03,
+  "error_difference_bootstrap": {
+    "mean": 0.10530544060098096,
+    "lower_95": 0.040854519078696236,
+    "upper_95": 0.16456807832467865,
+    "groups": 36,
+    "bootstrap_draws": 2000
+  },
+  "noninferiority_passed": false,
+  "near_repeat_review_flags": 327,
+  "solver": {
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "optimal": true,
+    "mip_gap": 0.0,
+    "regularised_logdet": 70.26182309381167,
+    "model_columns": 48,
+    "unregularised_rank": 48,
+    "requirements": 87
+  },
+  "limitations": [
+    "Retrospective evidence on one hydraulic rig; no prospective savings or Volvo validation.",
+    "Requirements represent factor/pair coverage, not legislation or measured product acceptance limits.",
+    "Holdout isolates settings, not rig assets or time; drift and serial dependence remain.",
+    "Outcome means discard transient dynamics; three repeats do not establish reliability.",
+    "Motor energy omits auxiliary loads, warmup and setup. No carbon claim.",
+    "Bootstrap groups are condition combinations; uncertainty is conditional on one split and fixed model."
+  ],
+  "environment": {
+    "python": "3.13.4",
+    "numpy": "2.2.6",
+    "pandas": "2.3.0",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.0"
+  }
+}

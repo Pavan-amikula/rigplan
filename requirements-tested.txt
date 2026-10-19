@@ -1,0 +1,9 @@
+# Direct dependency versions used for the checked-in benchmark (not a transitive lock).
+-e .
+numpy==2.2.6
+pandas==2.3.0
+scipy==1.15.3
+scikit-learn==1.7.0
+streamlit==1.66.0
+pyarrow==23.0.1
+pytest==9.1.1

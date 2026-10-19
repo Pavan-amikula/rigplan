@@ -1,0 +1,19 @@
+{
+  "purpose": "Exploratory training-only budget/repeat study; not independent validation",
+  "folds": 3,
+  "training_settings": 108,
+  "original_holdout_settings_excluded": 36,
+  "scenarios": 9,
+  "margin": 0.03,
+  "candidate": {
+    "scenario": "settings_100pct_repeats_6",
+    "projected_settings": 108,
+    "repeats": 6,
+    "projected_cycles": 648,
+    "historical_subset_reduction_pct": 40.49586776859504,
+    "delta": 0.0055488529839022365,
+    "upper_95": 0.018948087789193227
+  },
+  "release_decision": "Retain the reference campaign. Original reduced plan failed its held-out gate; development candidates require independent prospective validation.",
+  "caveat": "Intervals are descriptive and conditional on fixed folds/model. Nine scenarios were compared; no post-selection confirmatory claim."
+}
